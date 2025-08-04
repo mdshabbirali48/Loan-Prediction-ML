@@ -24,19 +24,6 @@ I used a **Logistic Regression** model here because:
 
 > Trained using scikit-learn and saved as a `.pkl` file for deployment.
 
----
-
-## Project Structure
-
-Loan-Prediction-ML/
-│
-├── app.py # Flask backend
-├── loan_model.pkl # Trained ML model
-├── loan_data.csv # Dataset 
-├── templates/
-│ └── index.html # Frontend form UI
-├── static/ # (Optional) CSS/JS files
-└── README.md # This file
 
 
 
