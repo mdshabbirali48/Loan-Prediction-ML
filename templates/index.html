@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction</title>
+</head>
+<body>
+    <h2>Loan Approval Predictor</h2>
+    <form action="/predict" method="post">
+        <p>Gender (0=Female, 1=Male): <input type="text" name="Gender"></p>
+        <p>Married (0=No, 1=Yes): <input type="text" name="Married"></p>
+        <p>Dependents (0-3): <input type="text" name="Dependents"></p>
+        <p>Education (0=Not Grad, 1=Grad): <input type="text" name="Education"></p>
+        <p>Self Employed (0=No, 1=Yes): <input type="text" name="Self_Employed"></p>
+        <p>Applicant Income: <input type="text" name="ApplicantIncome"></p>
+        <p>Coapplicant Income: <input type="text" name="CoapplicantIncome"></p>
+        <p>Loan Amount: <input type="text" name="LoanAmount"></p>
+        <p>Loan Amount Term: <input type="text" name="Loan_Amount_Term"></p>
+        <p>Credit History (0 or 1): <input type="text" name="Credit_History"></p>
+        <p>Property Area (0=Rural,1=Semiurban,2=Urban): <input type="text" name="Property_Area"></p>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
